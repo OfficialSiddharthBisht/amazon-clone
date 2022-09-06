@@ -1,6 +1,7 @@
 .header {
     background-color: #131921;
     display: flex;
+    align-items: center;
 }
 
 .header_logo {
@@ -8,4 +9,38 @@
     margin-right: 20px;
     margin-top: 18px;
     width: 100px;
+}
+.header_search{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.header_searchIcon{
+    color: black;
+    padding: 5px;
+    background-color: #cd9042;
+}
+.header_searchInput{
+    background-color: white;
+    color: grey;
+    height: 28px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.header_optionLineOne{
+    font-size: 13px;
+}
+.header_optionLineTwo{
+    font-size: 15px;
+    font-weight: 800;
 }

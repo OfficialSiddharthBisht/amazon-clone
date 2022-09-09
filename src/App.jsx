@@ -11,6 +11,7 @@ import Header from './components/Header';
 function App() {
   return (
     <div className="app">
+      <Header />
       <Routes>
         <Route path='/checkout' element = {<Checkout/>} />
         <Route path='/login' element = {<Login/>} />

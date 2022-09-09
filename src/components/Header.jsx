@@ -37,6 +37,14 @@ function Header() {
                     </div>
                 </Link>
                 {/* 4th link */}
+                <Link to = "/checkout" className='header_link'>
+                    <div className="header_optionBasket">
+                        {/* Shopping basket icon */}
+                        <h6>Basket</h6>
+                        {/* Number of items in the basket */}
+                        <span className='header_optionLineTwo header_basketCount'>0</span>
+                    </div>
+                </Link>
             </div>
         </nav>
     )

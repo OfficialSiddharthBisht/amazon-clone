@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Header from './Header'
 function Checkout() {
   return (
-    <div>Checkout</div>
+    <>
+    <Header />
+      <div>Checkout</div>
+    </>
   )
 }
 

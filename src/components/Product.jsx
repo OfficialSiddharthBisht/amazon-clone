@@ -1,17 +1,27 @@
 import React from 'react'
 import "../styling/product.css";
 
-function Product({id, title, price, rating , image}) {
+function Product({ id, title, price, rating, image }) {
   return (
     <div className='product'>
+      <div className="product_info">
         <p>{title}</p>
         <p className='product_'>
-            <small>Rs </small>
-            <strong>{price}</strong>
+          <small>Rs </small>
+          <strong>{price}</strong>
         </p>
         <div className="product_rating">
-            
+          {
+            Array(rating)
+              .fill()
+              .map((_) => (
+                <p>⭐</p>
+              ))
+          }
         </div>
+      </div>
+      <img src={image} alt="" />
+      <button>Add to basket</button>
     </div>
   )
 }
